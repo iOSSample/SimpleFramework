@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "DHImagePickerManager.h"
 
-@interface ViewController ()
+@interface ViewController ()<DHImagePikerDelegate>{
+    DHImagePickerManager *imagePicker;
+}
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -16,7 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    imagePicker = [[DHImagePickerManager alloc] init];
+
 }
 
 
@@ -24,6 +30,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (IBAction)clickOnButton:(id)sender {
+    [imagePicker setNeedImageInController:self];
+}
+- (void) didSelectedImage:(UIImage *) image{
+    if (image) {
+        self.imageView.image = image;
+    }
+}
 
 @end

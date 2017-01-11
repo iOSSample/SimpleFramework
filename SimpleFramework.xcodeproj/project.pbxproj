@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BCC4C8561E263186001B13C1 /* UIImage+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4C8501E263186001B13C1 /* UIImage+Orientation.m */; };
+		BCC4C85D1E26332D001B13C1 /* CutOutImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4C85A1E26332D001B13C1 /* CutOutImageViewController.m */; };
+		BCC4C85E1E26332D001B13C1 /* DHImagePickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC4C85C1E26332D001B13C1 /* DHImagePickerManager.m */; };
+		BCC4C8611E2633A7001B13C1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC4C8601E2633A7001B13C1 /* MobileCoreServices.framework */; };
 		BCE600611E262D22004B9C37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE600601E262D22004B9C37 /* main.m */; };
 		BCE600641E262D22004B9C37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE600631E262D22004B9C37 /* AppDelegate.m */; };
 		BCE600671E262D22004B9C37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE600661E262D22004B9C37 /* ViewController.m */; };
@@ -35,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BCC4C84F1E263186001B13C1 /* UIImage+Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Orientation.h"; sourceTree = "<group>"; };
+		BCC4C8501E263186001B13C1 /* UIImage+Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Orientation.m"; sourceTree = "<group>"; };
+		BCC4C8591E26332D001B13C1 /* CutOutImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CutOutImageViewController.h; sourceTree = "<group>"; };
+		BCC4C85A1E26332D001B13C1 /* CutOutImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CutOutImageViewController.m; sourceTree = "<group>"; };
+		BCC4C85B1E26332D001B13C1 /* DHImagePickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHImagePickerManager.h; sourceTree = "<group>"; };
+		BCC4C85C1E26332D001B13C1 /* DHImagePickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHImagePickerManager.m; sourceTree = "<group>"; };
+		BCC4C8601E2633A7001B13C1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		BCE6005C1E262D22004B9C37 /* SimpleFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE600601E262D22004B9C37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BCE600621E262D22004B9C37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCC4C8611E2633A7001B13C1 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +90,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BCC4C84D1E263041001B13C1 /* DFramework */ = {
+			isa = PBXGroup;
+			children = (
+				BCC4C84E1E263186001B13C1 /* Categorys */,
+				BCC4C8511E263186001B13C1 /* photo */,
+			);
+			path = DFramework;
+			sourceTree = "<group>";
+		};
+		BCC4C84E1E263186001B13C1 /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				BCC4C84F1E263186001B13C1 /* UIImage+Orientation.h */,
+				BCC4C8501E263186001B13C1 /* UIImage+Orientation.m */,
+			);
+			path = Categorys;
+			sourceTree = "<group>";
+		};
+		BCC4C8511E263186001B13C1 /* photo */ = {
+			isa = PBXGroup;
+			children = (
+				BCC4C8591E26332D001B13C1 /* CutOutImageViewController.h */,
+				BCC4C85A1E26332D001B13C1 /* CutOutImageViewController.m */,
+				BCC4C85B1E26332D001B13C1 /* DHImagePickerManager.h */,
+				BCC4C85C1E26332D001B13C1 /* DHImagePickerManager.m */,
+			);
+			path = photo;
+			sourceTree = "<group>";
+		};
+		BCC4C85F1E2633A7001B13C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCC4C8601E2633A7001B13C1 /* MobileCoreServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BCE600531E262D22004B9C37 = {
 			isa = PBXGroup;
 			children = (
+				BCC4C84D1E263041001B13C1 /* DFramework */,
 				BCE6005E1E262D22004B9C37 /* SimpleFramework */,
 				BCE600781E262D22004B9C37 /* SimpleFrameworkTests */,
 				BCE600831E262D22004B9C37 /* SimpleFrameworkUITests */,
 				BCE6005D1E262D22004B9C37 /* Products */,
+				BCC4C85F1E2633A7001B13C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -276,9 +327,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCC4C8561E263186001B13C1 /* UIImage+Orientation.m in Sources */,
 				BCE600671E262D22004B9C37 /* ViewController.m in Sources */,
 				BCE600641E262D22004B9C37 /* AppDelegate.m in Sources */,
+				BCC4C85D1E26332D001B13C1 /* CutOutImageViewController.m in Sources */,
 				BCE600611E262D22004B9C37 /* main.m in Sources */,
+				BCC4C85E1E26332D001B13C1 /* DHImagePickerManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -414,7 +468,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -428,7 +482,7 @@
 				DEVELOPMENT_TEAM = SFDR6WLD7K;
 				INFOPLIST_FILE = SimpleFramework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cn.tempdemo.SimpleFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.tempdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -440,7 +494,7 @@
 				DEVELOPMENT_TEAM = SFDR6WLD7K;
 				INFOPLIST_FILE = SimpleFramework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cn.tempdemo.SimpleFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.tempdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -514,6 +568,7 @@
 				BCE6008B1E262D22004B9C37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCE6008C1E262D22004B9C37 /* Build configuration list for PBXNativeTarget "SimpleFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +577,7 @@
 				BCE6008E1E262D22004B9C37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCE6008F1E262D22004B9C37 /* Build configuration list for PBXNativeTarget "SimpleFrameworkUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +586,7 @@
 				BCE600911E262D22004B9C37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
